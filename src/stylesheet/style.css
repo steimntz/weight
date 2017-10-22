@@ -1,0 +1,10 @@
+.js-no-trigger[data-weight]::before {
+    content: attr(data-weight);
+    background-color: #3aa;
+    padding: .5em .8em;
+    color: #fff;
+    font-size: .7em;
+    border-radius: 1em;
+    margin-right: .5em;
+    display: inline-table;
+}

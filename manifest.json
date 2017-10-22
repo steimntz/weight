@@ -1,0 +1,20 @@
+{
+
+  "description": "Adds weight feature to your specific Gitlab CE",
+  "manifest_version": 2,
+  "name": "Weight",
+  "version": "1.0",
+  "homepage_url": "https://github.com/steimntz/weight",
+  "icons": {
+    "48": "icons/app-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://git.tjro.jus.br/*", "*://dides-git.tjro.net/*"],
+      "js": ["src/main/models/board_weight.js", "src/main/issue.js"],
+      "css": ["src/stylesheet/style.css"]
+    }
+  ]
+
+}
